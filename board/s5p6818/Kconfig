@@ -10,8 +10,15 @@ config TARGET_ARTIK710_RAPTOR
 	bool "ARTIK710_RAPTOR"
 	help
 	  Support for artik710_raptor platform.
+	  
+config TARGET_NANOPI_M3
+	bool "NANOPI_M3"
+	help
+	  Support for NanoPi M3 platform.
 
 endchoice
 
 source "board/s5p6818/drone/Kconfig"
 source "board/s5p6818/artik710_raptor/Kconfig"
+source "board/s5p6818/nanopi_m3/Kconfig"
+
